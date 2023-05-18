@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CarritoCompras"
+             x:Class="CarritoCompras.View.PagePerfil"
+             Title="Perfil"
+             BackgroundColor="#18171c">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Frame Grid.Row="0" Padding="10" Margin="10" HasShadow="True" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="#18171c" >
+                <StackLayout>
+                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="5">
+                        <Label FontSize="27" TextColor="#860000" FontAttributes="Bold">MIS DATOS</Label>
+                    </StackLayout>
+                    <Label FontSize="13" TextColor="White" FontAttributes="Bold">CORREO ELECTRONICO</Label>
+                    <local:MyEntry  x:Name="txtEmail" TextColor="Black" Text="" IsEnabled="False" CornerRadius="15" BackgroundColor="#cccccc"/>
+                    <Label FontSize="13" TextColor="White" FontAttributes="Bold">NOMBRE</Label>
+                    <local:MyEntry x:Name="txtNombre" TextColor="Black" Text="" CornerRadius="15" BackgroundColor="#cccccc" MaxLength="50" TextChanged="Entry_TextChanged"/>
+                    <Label FontSize="13" TextColor="White" FontAttributes="Bold">APELLIDO</Label>
+                    <local:MyEntry x:Name="txtApellido" TextColor="Black" Text="" CornerRadius="15" BackgroundColor="#cccccc" MaxLength="50" TextChanged="Entry_TextChanged"/>
+                    <Label FontSize="13" TextColor="White" FontAttributes="Bold">TELEFONO</Label>
+                    
+                    <local:MyEntry x:Name="txtDocumento" TextColor="Black" Text="" CornerRadius="15" BackgroundColor="#cccccc" MaxLength="10" Keyboard="Numeric" TextChanged="TxtPhone_TextChanged"/>
+                    <Label x:Name="lblError_Documento" TextColor="Red" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False"/>
+
+                    <Button x:Name="btnGuardarCambios" Text="GUARDAR CAMBIOS" BackgroundColor="#79da54" TextColor="White" Clicked="BtnGuardarCambios_Clicked" CornerRadius="15" Margin="20"/>
+                    <Button x:Name="btnCerrarSesion" Text="CERRAR SESION" BackgroundColor="#a24838" TextColor="White" Clicked="BtnCerrarSesion_Clicked" CornerRadius="15" Margin="20"/>
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

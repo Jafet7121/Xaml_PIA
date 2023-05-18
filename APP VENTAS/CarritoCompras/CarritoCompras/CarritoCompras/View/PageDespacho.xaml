@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CarritoCompras"
+             x:Class="CarritoCompras.View.PageDespacho"
+             BackgroundColor="#18171c">
+    <ContentPage.Content>
+        <StackLayout>
+                <ContentView x:Name="ContentRetiro" IsVisible="False" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout>
+                        <SearchBar HeightRequest="35" x:Name="SearchTiendas" Placeholder="Buscar" CancelButtonColor="#9C2424" PlaceholderColor="white" HorizontalTextAlignment="Start" TextChanged="SearchTiendas_TextChanged" TextColor="White"></SearchBar>
+                    <StackLayout Padding="5" BackgroundColor="#c09f1c">
+                        <Label TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center">Escoja la opcion mas comoda para usted</Label>
+                        </StackLayout>
+                        <ListView x:Name="ListViewTiendas" ItemsSource="{Binding oListaTienda}" HasUnevenRows="True" IsPullToRefreshEnabled="False" ItemTapped="ListViewTiendas_ItemTapped" >
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="110" RowSpacing="5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="3*"/>
+                                                <ColumnDefinition Width="7*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Image Grid.Column="0" Source="store.png" Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HeightRequest="100" WidthRequest="100"></Image>
+
+                                            <StackLayout Grid.Column="1" Orientation="Vertical" VerticalOptions="Center" >
+                                                <Label Text="{Binding titulo}" Margin="2" FontSize="15" FontAttributes="Bold" TextColor="#9C2424"/>
+                                                <Label Text="{Binding direccion1}" Margin="2" FontSize="12" TextColor="White"/>
+                                                <Label Text="{Binding direccion2}" Margin="2" FontSize="12" TextColor="White"/>
+                                            </StackLayout>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </ContentView>
+
+
+                <ContentView x:Name="ContentDelivery" Padding="10, 0" IsVisible="false" AbsoluteLayout.LayoutFlags="All">
+                    <ScrollView>
+                        <Grid RowSpacing="1" Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" Grid.Row="0" Margin="0,10">
+                                <Label TextColor="White" Text="COMPLETE SUS DATOS" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="0" Grid.Row="1" Orientation="Vertical" HorizontalOptions="Fill" Spacing="0">
+                                <Label TextColor="White" FontAttributes="Bold">Nombre:</Label>
+                            <local:MyEntry x:Name="txtPersonaContacto" TextColor="Black" Placeholder="Ejemplo: Anita(tia)" CornerRadius="15" BackgroundColor="#cccccc" MaxLength="50" TextChanged="Entry_TextChanged"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="0" Grid.Row="2" Orientation="Vertical" HorizontalOptions="Fill" Spacing="0">
+                                <Label TextColor="White" FontAttributes="Bold">Dirección:</Label>
+                            <local:MyEntry x:Name="txtDireccion" TextColor="Black" Placeholder="Ejem: avenida 123" CornerRadius="15" BackgroundColor="#cccccc" MaxLength="50"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="0" Grid.Row="3" Orientation="Vertical" HorizontalOptions="Fill">
+                                <Label TextColor="White" FontAttributes="Bold">Municipio:</Label>
+                                <Picker x:Name="pickerDepartamento" Title="Seleccione" ItemsSource="{Binding oListaDepartamento}" ItemDisplayBinding="{Binding nombredepartamento}" SelectedIndexChanged="PickerDepartamento_SelectedIndexChanged" BackgroundColor="#cccccc"/>
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="0" Grid.Row="4" Orientation="Vertical" HorizontalOptions="Fill">
+                                <Label TextColor="White" FontAttributes="Bold">Colonia:</Label>
+                                <Picker x:Name="pickerProvincia" Title="Seleccione" ItemsSource="{Binding oListaProvincia}" ItemDisplayBinding="{Binding nombreprovincia}" SelectedIndexChanged="PickerProvincia_SelectedIndexChanged" BackgroundColor="#cccccc"/>
+                            </StackLayout>
+
+                        <StackLayout Grid.Column="0" Grid.Row="6" Orientation="Vertical" HorizontalOptions="Fill">
+                                <Label TextColor="White" FontAttributes="Bold">Telefono:</Label>
+                                <local:MyEntry x:Name="txtCelular" TextColor="Black" Placeholder="Ejem: 96857845" Keyboard="Numeric" CornerRadius="15" BackgroundColor="#cccccc" MaxLength="10" TextChanged="TxtPhone_TextChanged"/>
+                                <Label x:Name="lblError_Documento" TextColor="Red" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False"/>
+
+                        </StackLayout>
+
+                            <Button Grid.Column="0" Grid.Row="7" x:Name="btnContinuar" Text="Continuar" BackgroundColor="#f5cc1c" TextColor="White" Clicked="BtnContinuar_Clicked" CornerRadius="15" Margin="25"/>
+
+                        </Grid>
+                    </ScrollView>
+
+                </ContentView>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

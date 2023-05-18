@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CarritoCompras"
+             x:Class="CarritoCompras.View.PageRegistro"
+             BackgroundColor="#18171c"
+             Title="REGISTRO">
+    <ContentPage.Content>
+        <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            <StackLayout>
+                <Image Source="close.png" Aspect="AspectFill" HeightRequest="30" HorizontalOptions="Start" VerticalOptions="Center">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapBackArrow" Tapped="TapBackArrow_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label FontSize="25" FontAttributes="Bold" Grid.Row="1" TextColor="#fff9e5" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">REGISTRO</Label>
+
+            </StackLayout>
+
+            <Label FontSize="20" TextColor="#fff9e5" Grid.Row="2" HorizontalOptions="CenterAndExpand">Completa el siguiente formulario</Label>
+
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Margin="20">
+                <Label FontSize="20" FontAttributes="Bold" TextColor="White">NOMBRE</Label>
+                <local:MyEntry x:Name="txtNombre"  TextColor="Black" BackgroundColor="#cccccc" CornerRadius="15" MaxLength="50" TextChanged="Entry_TextChanged"/>
+                
+                <Label FontSize="20" FontAttributes="Bold" TextColor="White">APELLIDO</Label>
+                <local:MyEntry x:Name="txtApellido" TextColor="Black" BackgroundColor="#cccccc" CornerRadius="15" MaxLength="50" TextChanged="Entry_TextChanged"/>
+                
+                <Label FontSize="20" FontAttributes="Bold" TextColor="White">TELEFONO</Label>
+                <local:MyEntry x:Name="txtDocumento" TextColor="Black" BackgroundColor="#cccccc" CornerRadius="15" MaxLength="10" Keyboard="Numeric" TextChanged="TxtPhone_TextChanged"/>
+                <Label x:Name="lblError_Documento" TextColor="Red" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False"/>
+
+                <Label FontSize="20" FontAttributes="Bold" TextColor="White">CORREO ELECTRONICO</Label>
+                <local:MyEntry x:Name="txtEmail" TextColor="Black" BackgroundColor="#cccccc" CornerRadius="15" Keyboard="Email" TextChanged="TxtEmail_TextChanged"/>
+                <Label x:Name="lblError_Email" TextColor="Red" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False"/>
+
+                <Label FontSize="20" FontAttributes="Bold" TextColor="White">CONTRASEÑA</Label>
+                <local:MyEntry x:Name="txtContrasena" IsPassword="True" Placeholder="Minimo 6 caracteres"  MaxLength="10" TextChanged="TxtPassword_TextChanged" TextColor="Black" BackgroundColor="#cccccc" CornerRadius="15"/>
+                <Label x:Name="lblError_Contraseña" TextColor="Red" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False"/>
+            </StackLayout>
+            <Button x:Name="btnRegistrar" Text="REGISTRARSE" FontSize="20" FontAttributes="Bold" BackgroundColor="#f5cc1c" TextColor="White" Clicked="BtnRegistrar_Clicked" CornerRadius="15" Margin="30"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

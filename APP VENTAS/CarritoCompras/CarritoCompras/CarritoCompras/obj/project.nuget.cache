@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "nivsc4p6NPgIMTs/EX821PoLrz9rJb2iucM2dxjhvd4MCDLBbbJ3tfmmbmE/TD0U7qB5qgP34yQWxru1UTORog==",
+  "success": true,
+  "projectFilePath": "C:\\Final_Xaml\\APP VENTAS\\CarritoCompras\\CarritoCompras\\CarritoCompras\\CarritoCompras.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vader\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Vader\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Vader\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Vader\\.nuget\\packages\\xamarin.forms\\4.8.0.1687\\xamarin.forms.4.8.0.1687.nupkg.sha512"
+  ],
+  "logs": []
+}

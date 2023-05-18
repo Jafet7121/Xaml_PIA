@@ -1,0 +1,303 @@
+{
+  "bolsa": {
+    "GkYTeN2p1fbKSEf43q4MwwmNMjI2": {
+      "-NVGVxI0QKqnAsKYuy69": {
+        "cantidad": 3,
+        "categoria": "dulces",
+        "montoTotal": 0,
+        "producto": {
+          "descripcion": "Dulce",
+          "detalle": "Dulce de cajeta y nuez",
+          "idproducto": "-MMSfe6qrDTyu9aOVOWG",
+          "imagen": "https://i.ibb.co/fF8PDMw/gloria.jpg",
+          "nombre": "Gloria",
+          "precio": 30,
+          "stock": 999999
+        }
+      }
+    }
+  },
+  "compra": {
+    "yMDG2xI6Q4htV2fg13EYJDuowCA2": {
+      "-NVHE9yuEZwLm9-6JJUr": {
+        "fechaCompra": "12/05/2023",
+        "oDetallePago": {
+          "codigoCVV": "712",
+          "email": "nava@hotmail.com",
+          "fechaExpiracion": "12/23",
+          "numeroTarjeta": "1234567891234567"
+        },
+        "oListaBolsa": [
+          {
+            "cantidad": 2,
+            "categoria": "dulces",
+            "idbolsa": "-NVH18nNOZ6DWLZ_2lK4",
+            "montoTotal": 60,
+            "producto": {
+              "descripcion": "Dulce",
+              "detalle": "Dulce de cajeta y nuez",
+              "idproducto": "-MMSfe6qrDTyu9aOVOWG",
+              "imagen": "https://i.ibb.co/fF8PDMw/gloria.jpg",
+              "nombre": "Gloria",
+              "precio": 30,
+              "stock": 999999
+            }
+          },
+          {
+            "cantidad": 1,
+            "categoria": "refrescos",
+            "idbolsa": "-NVH1CgOhmty7qvGhnSo",
+            "montoTotal": 35,
+            "producto": {
+              "descripcion": "1 L",
+              "detalle": "Bien Fria",
+              "idproducto": "-MMgPIdZpFp2-5e18vQ4",
+              "imagen": "https://cdn.shopify.com/s/files/1/0297/6812/2412/products/Refresco_FANTA_NARANJA_1LT.png?v=1632771237",
+              "nombre": "FANTA",
+              "precio": 35,
+              "stock": 9999999
+            }
+          },
+          {
+            "cantidad": 1,
+            "categoria": "refrescos",
+            "idbolsa": "-NVH1GWXSfeXxsSDZbg6",
+            "montoTotal": 35,
+            "producto": {
+              "descripcion": "1 L",
+              "detalle": "Bien Fria",
+              "idproducto": "-MMSrOjbinO1xDgJoyVX",
+              "imagen": "https://cdn.shopify.com/s/files/1/0279/8151/2798/products/7441003500907-1-scaled_1200x1200.jpg?v=1639607192",
+              "nombre": "COCA COLA",
+              "precio": 35,
+              "stock": 99999
+            }
+          },
+          {
+            "cantidad": 1,
+            "categoria": "dulces",
+            "idbolsa": "-NVH1PFY69s2lY0ChXBs",
+            "montoTotal": 30,
+            "producto": {
+              "descripcion": "Oblea",
+              "detalle": "Oblea con cajeta",
+              "idproducto": "-MMSoZR9D3CRw9xWmaQP",
+              "imagen": "https://i.pinimg.com/originals/9d/3b/03/9d3b03d3052e34fbe0c161e71c75a8a6.jpg",
+              "nombre": "Oblea",
+              "precio": 30,
+              "stock": 20
+            }
+          }
+        ],
+        "oTienda": {
+          "direccion1": "Santo Domingo",
+          "direccion2": "Av. Diego Diaz de Berlanga, 1908",
+          "nombretienda": "Sucursal Tamales Fanty - Santo Domingo",
+          "titulo": "Sucursal Tamales Fanty - Santo Domingo - San Nicolas",
+          "ubicacion": "San Nicolas"
+        },
+        "precioTotal": 160,
+        "tipoEntrega": "retiro"
+      }
+    }
+  },
+  "dbalmacen": {
+    "categoria": {
+      "dulces": {
+        "imagen": "https://i.ibb.co/1zLNRWQ/dulces.jpg",
+        "nombre": "DULCES",
+        "productos": {
+          "-MMSfe6qrDTyu9aOVOWG": {
+            "descripcion": "Dulce",
+            "detalle": "Dulce de cajeta y nuez",
+            "imagen": "https://i.ibb.co/fF8PDMw/gloria.jpg",
+            "nombre": "Gloria",
+            "precio": 19.99,
+            "stock": 999999
+          },
+          "-MMSoZR9D3CRw9xWmaQP": {
+            "descripcion": "Oblea",
+            "detalle": "Oblea con cajeta",
+            "imagen": "https://i.pinimg.com/originals/9d/3b/03/9d3b03d3052e34fbe0c161e71c75a8a6.jpg",
+            "nombre": "Oblea",
+            "precio": 19.99,
+            "stock": 20
+          }
+        }
+      },
+      "refrescos": {
+        "imagen": "https://i.ibb.co/n6J8HxZ/latas.jpg",
+        "nombre": "REFRESCOS",
+        "productos": {
+          "-MMSqiY8nJhXUeBvt_Oc": {
+            "descripcion": "1 L",
+            "detalle": "Bien fria",
+            "imagen": "https://media.istockphoto.com/id/458611985/es/foto/pepsi-botella-aislado-sobre-blanco.jpg?s=612x612&w=0&k=20&c=IKlSVGImntMIrkBSBcj1vPBeS8y1L4dzYkPEG65peJ8=",
+            "nombre": "PEPSI",
+            "precio": 31.99,
+            "stock": 99999
+          },
+          "-MMSrOjbinO1xDgJoyVX": {
+            "descripcion": "1 L",
+            "detalle": "Bien Fria",
+            "imagen": "https://cdn.shopify.com/s/files/1/0279/8151/2798/products/7441003500907-1-scaled_1200x1200.jpg?v=1639607192",
+            "nombre": "COCA COLA",
+            "precio": 31.99,
+            "stock": 99999
+          },
+          "-MMgPIdZpFp2-5e18vQ4": {
+            "descripcion": "1 L",
+            "detalle": "Bien Fria",
+            "imagen": "https://cdn.shopify.com/s/files/1/0297/6812/2412/products/Refresco_FANTA_NARANJA_1LT.png?v=1632771237",
+            "nombre": "FANTA",
+            "precio": 35.00,
+            "stock": 9999999
+          }
+        }
+      },
+      "tamales": {
+        "imagen": "https://i.ibb.co/s173yds/tamaleswa.jpg",
+        "nombre": "TAMALES",
+        "productos": {
+          "-MMSp8YAYGSzZn1WZpAv": {
+            "descripcion": "DOCENA DE TAMALES CALIENTITOS",
+            "detalle": "Incluye: Salsa",
+            "imagen": "https://i.ibb.co/0sJXSZ0/tamales-Docena-Carne.png",
+            "nombre": "DOCENA DE CARNE",
+            "precio": 120.00,
+            "stock": 999999
+          },
+          "-MMSppGbcXvoxvXR0a3l": {
+            "descripcion": "DOCENA DE QUESO",
+            "detalle": "Incluye: Salsa",
+            "imagen": "https://i.ibb.co/bQyfFnx/tamales-Docena-Queso.png",
+            "nombre": "DOCENA DE QUESO",
+            "precio": 170.50,
+            "stock": 99999
+          },
+          "-MMSppGbcXvoxvXR0a4l": {
+            "descripcion": "DOCENA DE FRIJOL",
+            "detalle": "Incluye: Salsa",
+            "imagen": "https://i.ibb.co/C2tjNCt/docena-Talames-Frijol.png",
+            "nombre": "DOCENA DE FRIJOL",
+            "precio": 130.70,
+            "stock": 99999
+          },
+          "-MMSppGbcXvoxvXR0a5l": {
+            "descripcion": "DOCENA DE POLLO",
+            "detalle": "Incluye: Salsa",
+            "imagen": "https://i.ibb.co/ckytSQS/tamales-Docena-Pollo.png",
+            "nombre": "DOCENA DE POLLO",
+            "precio": 120.00,
+            "stock": 99999
+          },
+          "-MMSppGbcXvoxvXR0a6l": {
+            "descripcion": "TAMAL BORRACHO",
+            "detalle": "Incluye: Salsa",
+            "imagen": "https://i.ibb.co/6WcnNjS/TAMALborr.png",
+            "nombre": "TAMAL BORRACHO",
+            "precio": 110.20,
+            "stock": 99999
+          },
+          "-MMSppGbcXvoxvXR0a7l": {
+            "descripcion": "TAMAL INDIVIDUAL",
+            "detalle": "Incluye: Salsa",
+            "imagen": "https://i.ibb.co/NsGsPFD/tamalsolo.png",
+            "nombre": "TAMAL INDIVIDUAL",
+            "precio": 30.10,
+            "stock": 99999
+          }
+        }
+      }
+    }
+  },
+  "tiendas": {
+    "-MMlqM-odpUzaB3hWu2-": {
+      "direccion1": "Mitras Poniente",
+      "direccion2": "Sector Malaga 270",
+      "nombretienda": "Sucursal Tamales Fanty - Mitras Poniente",
+      "ubicacion": "Garcia"
+    },
+    "-MMlqg7Ylav9Ebal8tj3": {
+      "direccion1": "Col. La Hacienda",
+      "direccion2": "Av. Benito Juarez, 1210",
+      "nombretienda": "Sucursal Tamales Fanty - Exposicion",
+      "ubicacion": "Guadalupe"
+    },
+    "-MMlqs4_4GDPqeD3CUYN": {
+      "direccion1": "Santo Domingo",
+      "direccion2": "Av. Diego Diaz de Berlanga, 1908",
+      "nombretienda": "Sucursal Tamales Fanty - Santo Domingo",
+      "ubicacion": "San Nicolas"
+    }
+  },
+  "ubigeo": {
+    "departamento": {
+      "-MMlepOFOxLEb-YKy5Xk": {
+        "nombredepartamento": "Garcia"
+      },
+      "-MMletz9RG7bK_9W2Wd_": {
+        "nombredepartamento": "Guadalupe"
+      },
+      "-MMlf-iBw5XgMlnxlq34": {
+        "nombredepartamento": "San Nicolas"
+      }
+    },
+    "distrito": {
+      "-MMlfxec5nWjAh8n3RFB": {
+        "nombredistrito": "Lima",
+        "nombreprovincia": "Tres Caminos"
+      },
+      "-MMlg0aKqGPOmb_dnbof": {
+        "nombredistrito": "Ate",
+        "nombreprovincia": "Lima"
+      },
+      "-MMlg2R_e_RkW2nKZiW_": {
+        "nombredistrito": "Breña",
+        "nombreprovincia": "Lima"
+      }
+    },
+    "provincia": {
+      "-MMlfEDruHjt3HTUrpcb": {
+        "nombredepartamento": "Guadalupe",
+        "nombreprovincia": "Tres Caminos"
+      },
+      "-MMlfOR9avi4yu5xTAS9": {
+        "nombredepartamento": "Guadalupe",
+        "nombreprovincia": "Guadalupe Centro"
+      },
+      "-MMlfV_s_iEhS9piiKyO": {
+        "nombredepartamento": "Garcia",
+        "nombreprovincia": "Villas del Poniente"
+      },
+      "-MMlfZ6OM3x-Sw2PnAx1": {
+        "nombredepartamento": "Garcia",
+        "nombreprovincia": "Cumbres"
+      },
+      "-MMlfjNbMGJHh2cGxWw2": {
+        "nombredepartamento": "San Nicolas",
+        "nombreprovincia": "Hacienda las Fuentes"
+      },
+      "-MMlfkVkcDGaU6qWNS0_": {
+        "nombredepartamento": "San Nicolas",
+        "nombreprovincia": "Anahuac Sendero"
+      }
+    }
+  },
+  "usuarios": {
+    "GkYTeN2p1fbKSEf43q4MwwmNMjI2": {
+      "Apellidos": "Nava",
+      "Clave": "123456",
+      "Documento": "8128137608",
+      "Email": "jafet@gmail.com",
+      "Nombres": "Jafet"
+    },
+    "yMDG2xI6Q4htV2fg13EYJDuowCA2": {
+      "Apellidos": "Nava",
+      "Clave": "123456",
+      "Documento": "8129761376",
+      "Email": "nava@hotmail.com",
+      "Nombres": "Jafet"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CarritoCompras"
+             x:Class="CarritoCompras.View.PageLogin">
+    <StackLayout BackgroundColor="#18171c">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Image Source="Logo_TamalesFanty.png" HeightRequest="350" VerticalOptions="Center" Grid.Row="0"/>
+            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="1">
+                <Label FontSize="30" TextColor="#fff9e5" FontAttributes="Bold" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" >BIENVENIDO</Label>
+                <Frame HasShadow="True" BackgroundColor="#f5cc1c">
+                    <StackLayout>
+                        <Label FontSize="20" FontAttributes="Bold" TextColor="Black">CORREO ELECTRONICO</Label>
+                        <local:MyEntry x:Name="txtEmail" CornerRadius="15" Placeholder="user@hotmail.com" TextColor="Black" BackgroundColor="#fcf5d4" FontAttributes="Bold" Keyboard="Email"/>
+                        <Label x:Name="lblError_Email" TextColor="Red" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False" />
+                        <Label FontSize="20" TextColor="Black" FontAttributes="Bold">CONTRASEÑA</Label>
+                        <local:MyEntry x:Name="txtContrasena" CornerRadius="15" Placeholder="********" IsPassword="True" TextColor="Black" FontAttributes="Bold" BackgroundColor="#fcf5d4"/>
+                        <Label x:Name="lblError_Contraseña" TextColor="Red" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False"/>
+                    </StackLayout>
+                </Frame>
+                <Button x:Name="btnIniciarSesion" Text="INICIAR SESION" FontSize="20" FontAttributes="Bold" TextColor="White" BackgroundColor="#f5cc1c" Clicked="BtnIniciarSesion_Clicked" Margin="30" CornerRadius="15"/>
+                <Button x:Name="btnRegistrarse" Text="¿NO TIENES CUENTA? REGISTRATE" TextColor="White" Clicked="BtnRegistrarse_Clicked" BackgroundColor="#18171c"/>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>
